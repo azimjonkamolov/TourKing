@@ -18,8 +18,31 @@ body
 .header
 {
     height: 95vh;
-    background: linear-gradient(to right bottom, rgba(129, 212, 21, 0.7),
-     rgba(145, 193, 56, 0.7)), url(../img/wallpaper.jpg);
+    background: linear-gradient(to right bottom, rgba(75, 195, 216, 0.7),
+     rgba(56, 184, 193, 0.7)), url(../img/wallpaper.jpg); /* Dont forget how to use ) and , */
      background-position: top;
      background-size: cover;
+    position: relative;
+     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
+
+.logo-box
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo
+{
+    height: 60px;
+}
+
+
+
+
+
+
+
+
+/*  */
