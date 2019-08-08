@@ -31,7 +31,7 @@ body
      background-position: top;
      background-size: cover;
     position: relative;
-     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+     clip-path: polygon(50% 0%, 100% 0, 100% 65vh, 50% 100%, 0 65vh, 0 0);
 }
 
 .logo-box
@@ -132,6 +132,7 @@ body
     border-radius: 10rem;
     display: inline-block;
     position: relative;
+    font-size: 1.5rem;
 }
 
 .btn:hover
