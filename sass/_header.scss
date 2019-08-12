@@ -1,0 +1,164 @@
+// Header part
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding: 3rem; /*   To make 30px padding around the entire web page    */
+    box-sizing: border-box;
+}
+
+.header
+{
+    height: 95vh;
+    background: linear-gradient(to right bottom, $color-primary-light,
+     $color-primary-dark), url(../img/wallpaper.jpg); /* Dont forget how to use ) and , */
+     background-position: top;
+     background-size: cover;
+    position: relative;
+     clip-path: polygon(50% 0%, 100% 0, 100% 65vh, 50% 100%, 0 65vh, 0 0);
+
+    &__logo-box
+    {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+    }
+
+    &__logo
+    {
+        height: 8rem;
+    }
+
+    &__text-box
+    {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+}
+
+
+
+
+.heading-primary
+{
+    color: $color-white;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+    &--main
+    {
+        display: block; 
+        font-size: 6rem;
+        font-weight: 700;
+        letter-spacing: 3.5rem;
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+    }
+
+    &--sub
+    {
+        display: block; 
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: 1.7rem;
+        animation-name: moveInRight;
+        animation-duration: 2s;
+    }
+
+
+}
+
+.btn
+{
+    &:link,
+    &:visited
+    {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        transition: all .2s;
+        border-radius: 10rem;
+        display: inline-block;
+        position: relative;
+        font-size: 1.5rem;
+    }
+
+    &:hover
+    {
+        transform: translateY(-0.3rem);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+        &::after
+        {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &:active
+    {
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+
+    &--white
+    {
+        background-color: #fff;
+        color: $color-grey-dark;
+
+        &::after
+        {
+            background-color: #fff;
+        }
+    }
+
+    &::after
+    {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .2s;
+    }
+
+    &--animated
+    {
+        animation: moveButton .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+    
+}
+
+
+
+
+
+
+
+
+/*  */
