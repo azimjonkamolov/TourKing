@@ -2,8 +2,6 @@
 {
     max-width: $grid_width;
     margin: 0 auto;
-    padding-left: 20rem;
-
 
     &:not(:last-child)
     {
@@ -39,7 +37,7 @@
 
     .col-1-of-4
     {
-        width: calc( (85%-3 * #{$gutter-horizontal}) / 4 );
+        width: calc( (80%-3 * #{$gutter-horizontal}) / 4 );
     }
 
 }
