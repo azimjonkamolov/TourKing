@@ -43,7 +43,7 @@ body {
 
 .header {
   height: 95vh;
-  background: linear-gradient(to right bottom, #4bc3d8b3, #38b8c1b3), url(../img/wallpaper.jpg);
+  background-image: linear-gradient(to right bottom, #4bc3d8b3, #38b8c1b3), url(../img/wallpaper.jpg);
   /* Dont forget how to use ) and , */
   background-position: top;
   background-size: cover;
@@ -115,7 +115,7 @@ body {
   font-weight: 700;
   display: inline-block;
   background-image: linear-gradient(to right, #4bc3d8b3, #38b8c1b3);
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   transition: all .2s; }
   .heading-secondary:hover {
@@ -225,5 +225,21 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, #4bc3d8b3, #38b8c1b3), url(../img/features.jpg);
+  /* Dont forget how to use ) and , */
+  background-size: cover; }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  .feature-box__icon {
+    margin-bottom: .5rem; }
 
 /*# sourceMappingURL=style.css.map */
