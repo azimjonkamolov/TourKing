@@ -176,6 +176,9 @@ body {
 .u-pad-left-small {
   padding-left: 8rem; }
 
+.u-margin-top-big {
+  margin-top: 8rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -199,6 +202,11 @@ body {
   color: #777; }
   .btn--white::after {
     background-color: #fff; }
+.btn--blue {
+  background-color: #4091ee;
+  color: #fff; }
+  .btn--blue::after {
+    background-color: #4091ee; }
 .btn::after {
   content: "";
   display: inline-block;
@@ -260,38 +268,101 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -10rem; }
 
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 52rem; }
   .card__side {
-    color: white;
-    font-size: 3rem;
-    height: 50rem;
+    height: 52rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    overflow: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
     box-shadow: 0 1.3rem 4rem rgba(0, 0, 0, 0.2); }
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
-      transform: rotateY(180deg);
-      background-color: green; }
+      transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #4bc3d8b3, #38b8c1b3); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
-  .card__picture--1 {
-    color: gray; }
+  .card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    text-align: center;
+    -webkit-clip-path: polygon 0 0, 100% 0, 100% 85%, 0 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+    .card__picture--1 {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/samarkand.jpg"); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #4bc3d8b3, #38b8c1b3), url("../img/bukhara.jpg"); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../img/khiva.jpg"); }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    right: 4.5rem;
+    width: 60%; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(75, 195, 216, 0.8), rgba(56, 184, 193, 0.8)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)); }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+    .card__details li {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 1rem; }
+      .card__details li:not(:last-child) {
+        border-bottom: 1px solid #eee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
 
 /*# sourceMappingURL=style.css.map */

@@ -42,6 +42,17 @@
         }
     }
 
+    &--blue
+    {
+        background-color: $color-blue;
+        color: $color-white;
+
+        &::after
+        {
+            background-color: $color-blue;
+        }
+    }
+
     &::after
     {
         content: "";
