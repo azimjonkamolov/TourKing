@@ -89,7 +89,7 @@ body {
   display: block;
   font-size: 6rem;
   font-weight: 700;
-  letter-spacing: 3.5rem;
+  letter-spacing: 1.5rem;
   animation-name: moveInLeft;
   animation-duration: 2s;
 }
@@ -97,7 +97,7 @@ body {
   display: block;
   font-size: 3rem;
   font-weight: 400;
-  letter-spacing: 1.7rem;
+  letter-spacing: 0.7rem;
   animation-name: moveInRight;
   animation-duration: 2s;
 }
@@ -232,7 +232,7 @@ body {
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 6rem;
   transition: all 0.2s;
   border-radius: 10rem;
   display: inline-block;
@@ -679,6 +679,67 @@ body {
   padding-top: 2rem;
   width: 80%;
   float: right;
+}
+
+.navigation__checkbox {
+  display: none;
+}
+.navigation__button {
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+}
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#3636e6, #2f90b1);
+  z-index: 1000;
+  transform: scale(80);
+}
+.navigation__nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500;
+}
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+.navigation__item {
+  margin: 0.5rem;
+}
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 250%;
+  transition: all 0.4s;
+}
+.navigation__link:hover, .navigation__link:active {
+  background-position: 90%;
+  color: #3636e6;
+  transform: translateX(1rem);
 }
 
 /*# sourceMappingURL=style.css.map */
