@@ -16,6 +16,16 @@
 
     transition: all .2s;
 
+    @include respond(tab-port)
+    {
+        font-family: 2.5rem;
+    }
+
+    @include respond(phone)
+    {
+        font-family: 2rem;
+    }
+
     &:hover
     {
         transform: skewY(2deg) skewX(15deg) scale(1.1);

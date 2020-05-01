@@ -19,6 +19,12 @@
         display: block;
         transition: all .3s;
 
+        @include respond(tab-port)
+        {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
         &::-webkit-input-placeholder {
             color: $color-grey-dark-2;
         }
@@ -60,6 +66,12 @@
         margin-bottom: 2rem;
         // background-color: #000;
         // margin-bottom: 2rem;
+
+        @include respond(tab-port)
+        {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
     }
 
     &__radio-input
