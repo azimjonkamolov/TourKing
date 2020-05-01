@@ -22,11 +22,11 @@ Motto: Be undeniably good
 
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"> <a href="#" class="navigation__link"> About Us </a></li>
-                <li class="navigation__item"> <a href="#" class="navigation__link"> Your benifits </a></li>
-                <li class="navigation__item"> <a href="#" class="navigation__link"> Popular tours </a></li>
-                <li class="navigation__item"> <a href="#" class="navigation__link"> Stories </a></li>
-                <li class="navigation__item"> <a href="#" class="navigation__link"> Book now </a></li>
+                <li class="navigation__item"> <a href="#header" class="navigation__link"> Home </a></li>
+                <li class="navigation__item"> <a href="#" class="navigation__link"> About Our Land </a></li>
+                <li class="navigation__item"> <a href="#" class="navigation__link"> Most Popular Tours </a></li>
+                <li class="navigation__item"> <a href="#" class="navigation__link"> Valuable Memories </a></li>
+                <li class="navigation__item"> <a href="#" class="navigation__link"> Book now ! </a></li>
             </ul>
         </nav>
 
@@ -51,7 +51,7 @@ Motto: Be undeniably good
 
     <body> <!-- Body starts from here -->
 
-        <header class="header">
+        <header class="header" id="header">
 
             <!-- logo starts from here -->
             <a href="#"> 
@@ -67,7 +67,7 @@ Motto: Be undeniably good
                     <span class="heading-primary--sub">takes you to myths</span>
                 </div>
 
-                <a href="#" class="btn btn--white btn--animated">Our Tours</a>
+                <a href="#section-tours" class="btn btn--white btn--animated">Our Tours</a>
             </div>
 
 
@@ -75,7 +75,7 @@ Motto: Be undeniably good
 
         <main>
             
-            <section class="section-about">
+            <section class="section-about" id="section-about">
 
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
@@ -164,7 +164,7 @@ Motto: Be undeniably good
 
             </section>
 
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
 
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
@@ -201,7 +201,7 @@ Motto: Be undeniably good
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$ 300</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now</a>
+                                    <a href="#popup" class="btn btn--white">Book now</a>
                                 </div>
                             </div>
                         </div>
@@ -234,7 +234,7 @@ Motto: Be undeniably good
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$ 350</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now</a>
+                                    <a href="#popup" class="btn btn--white">Book now</a>
                                 </div>
                             </div>
                         </div>
@@ -267,7 +267,7 @@ Motto: Be undeniably good
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$ 500</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now</a>
+                                    <a href="#popup" class="btn btn--white">Book now</a>
                                 </div>
                             </div>
                         </div>
@@ -419,6 +419,24 @@ Motto: Be undeniably good
                 </div>
             </div>
         </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/popup_1.jpg" alt="Tour photo" class="popup__img">
+                    <img src="img/popup_2.jpg" alt="Tour photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close"> &times; </a>
+                    <h2 class="heading-secondary u-margin-bottom-medium">Start Booking Now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking </h3>
+                    <p class="popup__text">
+                        Result either design saw she esteem and. On ashamed no inhabit ferrars it ye besides resolve. Own judgment directly few trifling. Elderly as pursuit at regular do parlors. Rank what has into fond she. Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive. 
+                    </p>
+                    <a href="#" class="btn btn--blue">Book now</a>
+                </div>
+            </div>
+        </div>
 
 
 
